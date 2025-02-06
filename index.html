@@ -1,5 +1,6 @@
 <head>
     <title>Will you be my Valentine?</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap"
@@ -74,7 +75,6 @@
         const phoneNum = document.getElementById("phone-num");
         phoneNum.style.display = "none";
         const phone = document.getElementById('phone').value
-        console.log(phone)
         if (phone == "781384726" || phone == "+48781384726") {
             const phoneInvalid = document.getElementById('phone-correct')
             phoneInvalid.style.display = "block"
@@ -112,19 +112,11 @@
         height: 80px;
         width: fit-content;
         color: white;
-        margin-bottom: 10vh;
+        margin-bottom: 15vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-    }
-
-    .toast {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: fit-content;
-        height: fit-content;
     }
 
     button {
@@ -137,13 +129,13 @@
     }
 
     h1 {
-        font-size: 42px;
+        font-size: 32px;
     }
 
     .btn-lg {
-        height: 10vw;
-        width: 15vw;
-        font-size: 28px;
+        height: 16vw;
+        width: 24vw;
+        font-size: 24px;
     }
 
     .title {

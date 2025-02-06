@@ -11,15 +11,15 @@
 <div class="wrapper">
     <div class="box">
         <div>
-            <h2>Will you be my Valentine?</h2>
+            <h1 class="title">Will you be my Valentine?</h1>
         </div>
         <div>
-            <button type="button" class="btn btn-success">Yes</button>
-            <button id="originalDiv" onclick="moveDiv()" type="button" class="btn btn-danger">No</button>
+            <button type="button" class="btn btn-lg btn-success">Yes</button>
+            <button id="originalDiv" onclick="moveDiv()" type="button" class="btn btn-lg btn-danger">No</button>
         </div>
     </div>
     <div class="toast"></div>
-    <button id="randomDiv" onclick="moveDiv()" type="button" class="btn btn-danger">No</button>
+    <button id="randomDiv" onclick="moveDiv()" type="button" class="btn btn-lg btn-danger">No</button>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
@@ -67,7 +67,7 @@
         height: 80px;
         width: fit-content;
         color: white;
-        margin-bottom: 40%;
+        margin-bottom: 10vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -83,7 +83,7 @@
     }
 
     button {
-        margin: 8px;
+        margin: 16px;
     }
     
     #randomDiv {
@@ -91,5 +91,18 @@
         position: absolute;
     }
 
+    h1 {
+        font-size: 42px;
+    }
+
+    .btn-lg {
+        height: 60px;
+        width: 120px;
+        font-size: 28px;
+    }
+
+    .title {
+        margin-bottom: 16px;
+    }
 </style>
 

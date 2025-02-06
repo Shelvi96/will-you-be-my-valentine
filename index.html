@@ -26,7 +26,7 @@
         </div>
         <div class="phone-form">
             <input type="tel" class="form-input" id="phone" />
-            <button onclick="submitPhone()" type="button" class="btn btn-lg btn-primary">Send</button>
+            <button onclick="submitPhone()" type="button" id="phone-btn" class="btn btn-lg btn-primary">Send</button>
         </div>
     </div>
     <div id="phone-correct" class="box">
@@ -165,9 +165,16 @@
     }
 
     .form-input {
-        font-size: 32px;
-        height: 40px;
+        font-size: 42px;
+        height: 60px;
     }
 
+    #phone {
+        height: 60px;
+    }
+
+    #phone-btn {
+        font-size: 42px;
+    }
 </style>
 
